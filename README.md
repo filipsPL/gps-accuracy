@@ -1,18 +1,30 @@
 GPS, footpod, and accuracy
+======================
+
+<!-- TOC START min:1 max:6 link:true asterisk:false update:true -->
+- [GPS alone vs GPS with footpod](#gps-alone-vs-gps-with-footpod)
+  - [Track](#track)
+  - [Hardware](#hardware)
+  - [Results: distance](#results-distance)
+  - [Results: speed variation during the run](#results-speed-variation-during-the-run)
+<!-- TOC END -->
+
+
+
 
 # GPS alone vs GPS with footpod
 
 ## Track
 
-Track distance: 1.71 +- 0.01 (3x measurements with garmin vista hcx and polar m 400 = 6 measurements), urban environment.
+Track distance: 1.71km +- 0.01km (3x measurements with garmin vista hcx and polar m 400 = 6 measurements), urban environment.
 
 ## Hardware
 
 Hardware:
 - Garmin Forerunner 945 (GPS+Glonass, 1s track saving)
-  - Adidas Mi_coach footpod (ant+ version)
-- Garmin Vista HCx (reference)
-- Polar M400 (reference)
+  - adidas Mi_coach footpod (ant+ version)
+- Garmin Vista HCx (as reference)
+- Polar M400 (as reference)
 
 ## Results: distance
 
@@ -50,3 +62,4 @@ Smoothened data (5s window average). Garmin device + polar m400 as reference.
 - garmin with footpod: very stable pace.
 - garmin with gps only: high variability of speed
 - foot pod only (no GPS!): very stable pace.
+- polar m400: pace is more stable than forerunner in gps-only mode. This may be due to averaging [citation needed].
