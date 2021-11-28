@@ -30,7 +30,7 @@ Hardware:
 
 tl;dr garmin with footpod measured almost the exact distance of the loop (1.71 km).
 
-Three runs with three settings of garmin forerunner: (1) GPS+footpod, (2) GPS only, and (3) footpod only. All runs accompanied with two other gpses as a reference. Track distance: 1.71 +- 0.01.
+Three runs with three settings of garmin forerunner: (1) GPS+footpod, (2) GPS only, and (3) footpod only. All runs accompanied with two other gpses as a reference. Track distance: 1.71km +- 0.01km.
 
 | Round | distance Polar (reference) | distance Vista (reference) | data source | distance | time   | average pace | error  | place |
 | ----- | -------------------------- | -------------------------- | ----------- | -------- | ------ | ------------ | ------ | ----- |
