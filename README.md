@@ -1,6 +1,8 @@
 GPS, footpod, and accuracy
 ======================
 
+![footpod](obrazki/footpod_800s.jpg)
+
 <!-- TOC START min:1 max:6 link:true asterisk:false update:true -->
 - [GPS alone vs GPS with footpod](#gps-alone-vs-gps-with-footpod)
   - [Track](#track)
@@ -10,9 +12,9 @@ GPS, footpod, and accuracy
 <!-- TOC END -->
 
 
-
-
 # GPS alone vs GPS with footpod
+
+**tl;dr: footpod increases the distance measurement accuracy of the gps sportwatch.**
 
 ## Track
 
@@ -49,15 +51,132 @@ Three runs with three settings of garmin forerunner: (1) GPS+footpod, (2) GPS on
 tl;dr: garmin+footpod offers more "stable" and consistent pace/speed
 
 
-Raw data plots. Garmin device + polar m400 as reference.
+Raw data plots. Garmin device + polar m400 as a reference.
 
-![](obrazki/README-f1d45f67.png)
+![](obrazki/README-515e7979.png)
 
 
 Smoothened data (5s window average). Garmin device + polar m400 as reference.
 
-![](obrazki/README-a3630dcf.png)
+![](obrazki/README-3e38311c.png)
 
+
+Distribution of speeds:
+
+![](obrazki/README-5f006c63.png)
+
+
+And some statistics:
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="8" halign="left">speed_calc</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+    <tr>
+      <th>hardware</th>
+      <th>source</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="2" valign="top">footpod</th>
+      <th>garmin</th>
+      <td>569.0</td>
+      <td>2.958910</td>
+      <td>0.105325</td>
+      <td>1.99</td>
+      <td>2.940002</td>
+      <td>2.960083</td>
+      <td>3.000000</td>
+      <td>3.639984</td>
+    </tr>
+    <tr>
+      <th>polar</th>
+      <td>574.0</td>
+      <td>2.999651</td>
+      <td>0.492067</td>
+      <td>0.00</td>
+      <td>2.900024</td>
+      <td>3.000000</td>
+      <td>3.199951</td>
+      <td>4.500000</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">gps</th>
+      <th>garmin</th>
+      <td>572.0</td>
+      <td>2.917657</td>
+      <td>0.770542</td>
+      <td>0.00</td>
+      <td>2.580013</td>
+      <td>2.894989</td>
+      <td>3.209970</td>
+      <td>7.880005</td>
+    </tr>
+    <tr>
+      <th>polar</th>
+      <td>576.0</td>
+      <td>2.957465</td>
+      <td>0.302476</td>
+      <td>0.00</td>
+      <td>2.800049</td>
+      <td>3.000000</td>
+      <td>3.099998</td>
+      <td>4.100006</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">gps+footpod</th>
+      <th>garmin</th>
+      <td>580.0</td>
+      <td>2.940086</td>
+      <td>0.085252</td>
+      <td>1.49</td>
+      <td>2.910004</td>
+      <td>2.949951</td>
+      <td>2.980042</td>
+      <td>3.070007</td>
+    </tr>
+    <tr>
+      <th>polar</th>
+      <td>606.0</td>
+      <td>2.852475</td>
+      <td>0.672028</td>
+      <td>0.00</td>
+      <td>2.799988</td>
+      <td>3.000000</td>
+      <td>3.100002</td>
+      <td>4.199997</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+**Results:**
 
 - garmin with footpod: very stable pace.
 - garmin with gps only: high variability of speed
