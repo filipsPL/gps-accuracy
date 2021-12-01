@@ -25,8 +25,8 @@ Track distance: 1.71km +- 0.01km (3x measurements with garmin vista hcx and pola
 Hardware:
 - Garmin Forerunner 945 (GPS+Glonass, 1s track saving)
   - adidas Mi_coach footpod (ant+ version)
-- Garmin Vista HCx (as reference)
-- Polar M400 (as reference)
+- Garmin Vista HCx (as a reference)
+- Polar M400 (as a reference)
 
 ## Results: distance
 
@@ -56,7 +56,7 @@ Raw data plots. Garmin device + polar m400 as a reference.
 ![](obrazki/README-515e7979.png)
 
 
-Smoothened data (5s window average). Garmin device + polar m400 as reference.
+Smoothened data (5s window average). Garmin device + polar m400 as a reference.
 
 ![](obrazki/README-3e38311c.png)
 
